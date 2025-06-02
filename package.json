@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/WarfDesigns/the-quote-card-express/issues"
   },
-  "homepage": "https://github.com/WarfDesigns/the-quote-card-express#readme"
+  "homepage": "https://github.com/WarfDesigns/the-quote-card-express#readme",
+  "dependencies": {
+    "the-quote-card-express": "file:"
+  }
 }
