@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/WarfDesigns/the-quote-card-express#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "the-quote-card-express": "file:"
   }
 }
