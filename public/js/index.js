@@ -32,3 +32,4 @@ function loopThroughQuotes() {
         }
     }, 3000);
 }
+setTimeout(loopThroughQuotes, 3000);
