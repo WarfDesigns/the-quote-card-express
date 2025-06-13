@@ -4,7 +4,25 @@ const elements = {
     quote: document.getElementById("quote"),
     author: document.getElementById("author"),
 };
-const quotes = [
+
+async function getRandomImage() {
+    const client_id = "mgVKeIcqEtlNSTUA_SWmq9vLw5vyYLxb8IpgHgH4lhs";
+    const endpoint = `https://api.unsplash.com/photos/random/?client_id=${client_id}`;
+    try {
+        const response = await fetch(endpoint);
+        const returnedData = await response.json();
+        const receivedPhotoUrl = returnedData.urls.regular;
+
+        const imgDiv = document.querySelector(".background-img");
+        imgDiv.style.backgroundImage = `url("${receivedPhotoUrl}")`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+getRandomImage();
+
+/*const quotes = [
     {
         quote: "Remorseless Labor Conquers All",
         author: "Virgil",
@@ -32,4 +50,4 @@ function loopThroughQuotes() {
         }
     }, 3000);
 }
-setTimeout(loopThroughQuotes, 3000);
+setTimeout(loopThroughQuotes, 3000);*/
