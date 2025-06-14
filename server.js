@@ -2,11 +2,12 @@
 
 const express = require("express");
 const app = express();
-const port = 5555;
+const port = 64594;
+
 require("dotenv").config();
 const cors = require("cors");
-
 app.use(cors());
+
 app.use(express.static("./public"));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
