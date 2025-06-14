@@ -6,7 +6,7 @@ const elements = {
 };
 
 async function getRandomImage() {
-    const endpoint = "http://localhost:64594/api/v1/getRandomImage";
+    const endpoint = "http://localhost:5500/api/v1/getRandomImage";
     try {
         const response = await fetch(endpoint);
         const returnedData = await response.json();
